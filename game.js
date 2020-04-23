@@ -78,6 +78,10 @@ $(".btn").click(function () {
     let wrongSound = new Audio("sounds/wrong.mp3");
     wrongSound.play();
     $("h1").text("Game Over, Press Any Key to Restart");
+    $("#start-button").css("width", "124px");
+    $("#start-button").text("Restart");
+    $("#start-button").show();
+
     startOver();
   }
 });
@@ -127,4 +131,15 @@ $(".fa-question-circle").click(function () {
   setTimeout(function () {
     $(".fa-question-circle").removeClass("q-pressed");
   }, 100);
+});
+
+// Start button.
+$("#start-button").click(function () {
+  // To check if function is already activated or not.
+  if (!isFunctionExecuted && !isToturialClicked) {
+    $("#start-button").hide();
+    $("footer").text("");
+    isFunctionExecuted = true;
+    nextSequence();
+  }
 });

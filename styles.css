@@ -102,3 +102,12 @@ footer {
   width: 100vw;
   position: absolute;
 }
+
+#start-button {
+  font-family: "Press Start 2P", cursive;
+  color: #011f3f;
+  height: 50px;
+  width: 100px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
