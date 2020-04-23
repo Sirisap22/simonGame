@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/79210aac62.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1 id="level-title">Press A Key to Start<i class="fas fa-question-circle fa-2x"></i></h1>
+    <div class="container">
+      <div lass="row">
+        <div type="button" id="green" class="btn green"></div>
+
+        <div type="button" id="red" class="btn red"></div>
+      </div>
+
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+      </div>
+    </div>
+    <!-- Simon tutorial -->
+    <div class="tutorial-background">
+      <div class="tutorial">
+        <h1>Tutorial</h1>
+        <p>When start. Simon will give the first signal. Repeat the signal by pressing the same color lens.</p>
+        <p>Simon will duplicate the first signal and add one. Repeat these two signals by pressing the same color lenses, in order.</p>
+        <p>Simon will duplicate these first two signals and add one.</p>
+        <p>Continue playing as long as you can repeat each sequence of signals correctly.</p>
+        <p>If you fail to repeat a sequence exactly, Simon responds with a fail sound. This means you've lost, and the sequence of signals ends.</p>
+      </div>
+    </div>
+
+    <!-- jQuery + javaScript link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="game.js" charset="utf-8"></script>
+  </body>
+  <footer>
+    Made by Sirisap Siripattanakul.
+  </footer>
+</html>
