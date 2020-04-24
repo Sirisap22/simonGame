@@ -17,6 +17,7 @@ $("div.tutorial-background").toggle();
 $(document).keydown(function () {
   // To check if function is already activated or not.
   if (!isFunctionExecuted && !isToturialClicked) {
+    $("#start-button").hide();
     $("footer").text("");
     isFunctionExecuted = true;
     nextSequence();
